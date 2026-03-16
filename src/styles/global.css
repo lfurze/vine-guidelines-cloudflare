@@ -8,7 +8,7 @@
   --color-black: #1a1a1a;
   --color-highlight: #40b2cf;
   --color-highlight-light: #e8f6fa;
-  --color-highlight-dark: #1f7a91;
+  --color-highlight-dark: #1a6b7f;
   --color-gray-50: #f8f9fa;
   --color-gray-100: #f0f2f4;
   --color-gray-200: #e2e5e9;
@@ -114,12 +114,12 @@ img {
   color: var(--color-highlight);
 }
 .section--navy .btn--primary {
-  background: var(--color-highlight);
-  color: var(--color-white);
-}
-.section--navy .btn--primary:hover {
   background: var(--color-white);
   color: var(--color-navy);
+}
+.section--navy .btn--primary:hover {
+  background: var(--color-highlight-dark);
+  color: var(--color-white);
 }
 
 .badge {
