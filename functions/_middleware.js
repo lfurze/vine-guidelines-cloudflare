@@ -1,3 +1,5 @@
+// PASSWORD PROTECTION TEMPORARILY DISABLED
+// To re-enable, remove the early return in onRequest below
 const PASSWORD = "vine2026";
 const COOKIE_NAME = "site_auth";
 const COOKIE_MAX_AGE = 86400; // 24 hours
@@ -100,6 +102,9 @@ function loginPage(error = false) {
 }
 
 export async function onRequest(context) {
+  // TEMPORARILY DISABLED — remove this line to re-enable password protection
+  return context.next();
+
   const { request } = context;
 
   // If valid cookie exists, pass through
