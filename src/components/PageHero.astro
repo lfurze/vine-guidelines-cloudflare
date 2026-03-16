@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  accent?: string;
+  badge?: string;
+}
+
+const { title, subtitle, accent = '#40b2cf', badge } = Astro.props;
+---
+
+<section class="page-hero" style={`--accent: ${accent}`}>
+  <div class="container">
+    {badge && <span class="badge">{badge}</span>}
+    <h1>{title}</h1>
+    {subtitle && <p class="lead">{subtitle}</p>}
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    padding: 5rem 0 3rem;
+    background: linear-gradient(160deg, var(--color-white) 0%, color-mix(in srgb, var(--accent) 10%, white) 50%, var(--color-white) 100%);
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+  .page-hero h1 {
+    max-width: 700px;
+  }
+  .page-hero .lead {
+    max-width: 640px;
+  }
+  @media (max-width: 768px) {
+    .page-hero { padding: 3rem 0 2rem; }
+  }
+</style>

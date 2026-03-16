@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+
+<BaseLayout title="Contact" description="Contact VINE and the guidelines author for questions about the VINE School GenAI Guidelines.">
+  <PageHero
+    title="Contact"
+    subtitle="Get in touch with VINE or the guidelines author."
+    badge="Connect"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>VINE — Victorian ICT Network for Education</h3>
+          <p>VINE is a volunteer-led professional association committed to nurturing the effective and innovative use of ICT in all areas of K–12 education. Membership is open to school employees.</p>
+          <ul class="contact-links">
+            <li>
+              <strong>Website:</strong>
+              <a href="https://vine.vic.edu.au" target="_blank" rel="noopener">vine.vic.edu.au</a>
+            </li>
+            <li>
+              <strong>Forum:</strong>
+              <a href="https://forum.vine.vic.edu.au/" target="_blank" rel="noopener">forum.vine.vic.edu.au</a>
+            </li>
+            <li>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/company/vine-victorian-ict-network-for-education" target="_blank" rel="noopener">VINE on LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Leon Furze — Guidelines Author</h3>
+          <p>Leon Furze is an educator, researcher, and consultant specialising in AI in education. He co-developed the AI Assessment Scale, holds a PhD in generative AI in education, and is the Director of Furze Smith Consulting.</p>
+          <p>Leon prepared these guidelines for VINE and is available for consultation, professional learning, and advisory work with schools.</p>
+          <ul class="contact-links">
+            <li>
+              <strong>Website:</strong>
+              <a href="https://leonfurze.com" target="_blank" rel="noopener">leonfurze.com</a>
+            </li>
+            <li>
+              <strong>Blog:</strong>
+              <a href="https://leonfurze.com/blog" target="_blank" rel="noopener">leonfurze.com/blog</a>
+            </li>
+            <li>
+              <strong>Online Courses:</strong>
+              <a href="https://practicalaistrategies.com" target="_blank" rel="noopener">practicalaistrategies.com</a>
+            </li>
+            <li>
+              <strong>Teaching AI Ethics:</strong>
+              <a href="https://teachingaiethics.com" target="_blank" rel="noopener">teachingaiethics.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section--gray">
+    <div class="container" style="text-align: center;">
+      <div class="content-narrow">
+        <h2>Stay up to date</h2>
+        <p class="lead">Leon publishes a weekly newsletter on the practical and ethical implications of GenAI in education — free to VINE members.</p>
+        <a href="https://subscribe.leonfurze.com/VINE" target="_blank" rel="noopener" class="btn btn--primary">Subscribe to the VINE newsletter</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+  .contact-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 12px;
+    padding: 2.5rem;
+  }
+  .contact-card__icon {
+    color: var(--color-highlight);
+    margin-bottom: 1.5rem;
+  }
+  .contact-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .contact-links {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+  .contact-links li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-gray-100);
+  }
+  .contact-links li:last-child {
+    border-bottom: none;
+  }
+  .contact-links strong {
+    display: inline-block;
+    min-width: 120px;
+    color: var(--color-navy);
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+</style>

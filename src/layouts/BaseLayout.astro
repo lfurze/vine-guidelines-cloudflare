@@ -1,0 +1,305 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'The VINE School Generative AI Guidelines — practical, evidence-based guidance for K-12 schools navigating AI in education.' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} | VINE School GenAI Guidelines 2026</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="/" class="nav__logo">
+        <img src="/images/vine-logo.jpg" alt="VINE — Victorian ICT Network for Education" />
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li class="nav__dropdown">
+          <a href="/guidelines/teaching-and-learning">Guidelines</a>
+          <ul class="nav__dropdown-menu">
+            <li><a href="/guidelines/teaching-and-learning">Teaching &amp; Learning</a></li>
+            <li><a href="/guidelines/ethics-and-wellbeing">Ethics &amp; Wellbeing</a></li>
+            <li><a href="/guidelines/privacy-and-security">Privacy &amp; Security</a></li>
+          </ul>
+        </li>
+        <li><a href="/toolkit">Toolkit</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <img src="/images/vine-logo.jpg" alt="VINE" class="footer__logo" />
+          <p class="footer__tagline">Share, Learn and Grow</p>
+        </div>
+        <div class="footer__col">
+          <h4>Guidelines</h4>
+          <ul>
+            <li><a href="/guidelines/teaching-and-learning">Teaching &amp; Learning</a></li>
+            <li><a href="/guidelines/ethics-and-wellbeing">Ethics &amp; Wellbeing</a></li>
+            <li><a href="/guidelines/privacy-and-security">Privacy &amp; Security</a></li>
+            <li><a href="/toolkit">Toolkit</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/about">About these guidelines</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="https://vine.vic.edu.au" target="_blank" rel="noopener">VINE Website</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/vine-victorian-ict-network-for-education" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://forum.vine.vic.edu.au/" target="_blank" rel="noopener">VINE Forum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></p>
+        <p>Guidelines prepared by <a href="https://leonfurze.com" target="_blank" rel="noopener">Leon Furze</a> | Furze Smith Consulting</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-gray-200);
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .nav__logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    .nav__links {
+      display: flex;
+      list-style: none;
+      gap: 0.25rem;
+      align-items: center;
+    }
+
+    .nav__links a {
+      display: block;
+      padding: 0.5rem 1rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--color-navy);
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .nav__links a:hover {
+      color: var(--color-highlight);
+      background: var(--color-highlight-light);
+    }
+
+    .nav__dropdown {
+      position: relative;
+    }
+
+    .nav__dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      border-radius: 8px;
+      padding: 0.5rem 0;
+      min-width: 220px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      list-style: none;
+      z-index: 10;
+    }
+
+    .nav__dropdown:hover .nav__dropdown-menu {
+      display: block;
+    }
+
+    .nav__dropdown-menu a {
+      padding: 0.5rem 1.25rem;
+      border-radius: 0;
+    }
+
+    .nav__toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    .nav__toggle span {
+      width: 24px;
+      height: 2px;
+      background: var(--color-navy);
+      transition: all 0.3s ease;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--color-navy);
+      color: rgba(255, 255, 255, 0.75);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer__logo {
+      height: 36px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer__tagline {
+      font-size: 0.875rem;
+      opacity: 0.7;
+    }
+
+    .footer h4 {
+      color: var(--color-white);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9375rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer a:hover {
+      color: var(--color-highlight);
+    }
+
+    .footer__bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8125rem;
+    }
+
+    .footer__bottom p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav__toggle { display: flex; }
+
+      .nav__links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background: var(--color-white);
+        flex-direction: column;
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-gray-200);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      }
+
+      .nav__links.active {
+        display: flex;
+      }
+
+      .nav__dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding-left: 1rem;
+      }
+
+      .nav__dropdown:hover .nav__dropdown-menu {
+        display: block;
+      }
+
+      .footer__inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', links.classList.contains('active').toString());
+      });
+    }
+  </script>
+</body>
+</html>

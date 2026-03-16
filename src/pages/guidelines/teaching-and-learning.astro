@@ -1,0 +1,191 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+---
+
+<BaseLayout title="Teaching & Learning" description="VINE School guidelines for AI in teaching and learning — AI literacy, assessment, professional learning, and cognitive offloading.">
+  <PageHero
+    title="Teaching & Learning"
+    subtitle="Curriculum, assessment, professional learning, and AI literacy — practical guidance for the classroom."
+    badge="Section 1"
+    accent="#40b2cf"
+  />
+
+  <section class="section">
+    <div class="container content-narrow">
+      <p class="lead">These guiding statements set out the VINE School's position on key teaching and learning issues related to AI. They are intended as a starting point for school-level discussion, not as prescriptive rules.</p>
+    </div>
+  </section>
+
+  <!-- Guiding Statements -->
+  <section class="section section--gray">
+    <div class="container content-narrow">
+      <h2>Guiding Statements</h2>
+
+      <div class="statement">
+        <p class="statement__id">1.1</p>
+        <h3>Critical AI Literacy</h3>
+        <p>The VINE School integrates Critical AI literacy into existing subject areas rather than teaching it as a standalone topic. Each faculty is responsible for identifying where AI intersects with their discipline and incorporating this into curriculum planning.</p>
+        <p>Critical AI literacy encompasses four domains, adapted from the OECD/EC framework: <strong>engaging</strong> with AI (understanding what it is and how it works), <strong>creating</strong> with AI (using AI technologies purposefully and ethically), <strong>managing</strong> AI (evaluating outputs, identifying bias, and understanding limitations), and <strong>designing</strong> with AI (contributing to how AI is developed and deployed).</p>
+        <p>Critical AI literacy extends beyond "how to use AI" to encompass "when to use it, when not to, and why."</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">1.2</p>
+        <h3>Academic Integrity</h3>
+        <p>Academic integrity remains essential to all disciplines and must be clearly articulated to students. The VINE School's approach to academic integrity includes the responsible use of AI:</p>
+        <blockquote class="pullquote">
+          Academic integrity is based on trust, honesty, and respect. All sources must be acknowledged, including AI technologies. If AI has been used in any form for part or all of a task, the specific tools and the nature of their use must be disclosed.
+        </blockquote>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">1.3</p>
+        <h3>The AI Assessment Scale</h3>
+        <p>The VINE School uses the AI Assessment Scale to provide a clear, shared framework for communicating the appropriate level of AI use in any given assessment task. The scale has five levels.</p>
+        <p>Different stages of an assessment task may require different levels of the scale. Any task or stage requiring Level 1 (No AI) must be completed in class under supervision.</p>
+        <div class="aias-image">
+          <img src="/images/ai-assessment-scale.png" alt="The AI Assessment Scale — five levels from No AI to AI Exploration" />
+        </div>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">1.4</p>
+        <h3>Assessment Design</h3>
+        <p>Assessment practices must be designed with AI in mind, not merely policed after the fact. The VINE School encourages assessment approaches that are resilient to AI misuse while remaining authentic and meaningful. These include:</p>
+        <ul>
+          <li>Process-based assessment (where the journey of learning is assessed, not just the final product)</li>
+          <li>Oral defence and viva voce components</li>
+          <li>Portfolio approaches that demonstrate growth over time</li>
+          <li>Reflective journals documenting AI use and its impact on learning</li>
+          <li>Collaborative tasks where individual contributions are visible</li>
+        </ul>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">1.5</p>
+        <h3>AI Detection</h3>
+        <p>The VINE School <strong>does not approve</strong> the use of AI detection tools as the sole basis for academic integrity decisions. International evidence consistently demonstrates that detection tools produce unreliable results and are biased against multilingual learners and students for whom English is an additional language.</p>
+        <p>Schools seeking to address concerns about AI use in assessment should focus on assessment design and transparent expectations rather than detection.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">1.6</p>
+        <h3>Professional Learning</h3>
+        <p>Staff require ongoing, embedded professional learning to engage with AI in their practice. The VINE School is committed to providing this as a school responsibility, not an individual one. Professional learning includes:</p>
+        <ul>
+          <li>A minimum of one whole-staff session per semester</li>
+          <li>Regular opportunities through communities of practice and peer collaboration</li>
+          <li>Designated time for teachers to explore and evaluate AI technologies relevant to their discipline</li>
+        </ul>
+        <p>An AI Lead is designated to coordinate professional learning, curate resources, and serve as a point of contact for AI-related questions across the school.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">1.7</p>
+        <h3>Cognitive Offloading</h3>
+        <p>The VINE School recognises that AI use exists on a spectrum from genuine learning support to "cognitive offloading" — where students rely on AI instead of developing their own thinking. Teachers are supported to distinguish between AI use that scaffolds learning (operating within the student's zone of proximal development) and AI use that bypasses it.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">1.8</p>
+        <h3>Staff Use of AI for Reporting and Administration</h3>
+        <p>The use of speech-to-text tools and GenAI for proofreading, editing, and refining the clarity of report comments is approved, provided that the substance of the feedback reflects the teacher's own professional judgement. AI should not be used to wholly generate student feedback or report comments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Roles -->
+  <section class="section">
+    <div class="container content-narrow">
+      <h2>Key Roles, Key Questions</h2>
+      <p>The following questions reflect the concerns that different stakeholders bring to teaching and learning in an AI-rich environment.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Key Questions</th>
+              <th>Guidance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AP Curriculum</strong></td>
+              <td>What does current research suggest about the impact of GenAI on critical and creative thinking? How do we redesign assessment without losing rigour?</td>
+              <td>1.1, 1.3, 1.4, 1.7</td>
+            </tr>
+            <tr>
+              <td><strong>Teachers</strong></td>
+              <td>What can I actually use AI for in my classroom? How do I set clear, consistent expectations for students?</td>
+              <td>1.1, 1.2, 1.3</td>
+            </tr>
+            <tr>
+              <td><strong>Students</strong></td>
+              <td>Can I use AI in class? Is it cheating? What exactly do I need to acknowledge, and how?</td>
+              <td>1.2, 1.3</td>
+            </tr>
+            <tr>
+              <td><strong>Parents</strong></td>
+              <td>Is my child learning, or is the AI learning for them? How would I know the difference?</td>
+              <td>1.1, 1.7</td>
+            </tr>
+            <tr>
+              <td><strong>Principal</strong></td>
+              <td>Are our assessment practices defensible? Are we keeping pace with comparable schools?</td>
+              <td>1.3, 1.4, 1.6</td>
+            </tr>
+            <tr>
+              <td><strong>Board Directors</strong></td>
+              <td>Are we treating AI governance with the same rigour as other high-risk compliance areas?</td>
+              <td>1.2, 1.3, 1.4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="nav-links">
+        <a href="/toolkit" class="btn btn--primary">View practical tools for this section</a>
+        <a href="/guidelines/ethics-and-wellbeing" class="btn btn--outline">Next: Ethics &amp; Wellbeing &rarr;</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .pullquote {
+    border-left: 4px solid var(--color-highlight);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    background: var(--color-highlight-light);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--color-navy);
+  }
+  .aias-image {
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .aias-image img {
+    display: block;
+    width: 100%;
+  }
+  ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    line-height: 1.8;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>

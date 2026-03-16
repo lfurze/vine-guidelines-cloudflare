@@ -1,0 +1,231 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+---
+
+<BaseLayout title="Privacy & Security" description="VINE School guidelines on AI privacy and security — data governance, shadow IT, risk zoning, vendor transparency, and the AI Lead role.">
+  <PageHero
+    title="Privacy & Security"
+    subtitle="Data governance, shadow IT, risk zoning, vendor transparency, age-appropriate access, and the AI Lead role."
+    badge="Section 3"
+    accent="#2d8da6"
+  />
+
+  <section class="section">
+    <div class="container content-narrow">
+      <p class="lead">Privacy and security governance must be proportional — managing risk without stifling innovation. These statements establish the VINE School's approach to AI data governance.</p>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container content-narrow">
+      <h2>Guiding Statements</h2>
+
+      <div class="statement">
+        <p class="statement__id">3.1</p>
+        <h3>Data Governance</h3>
+        <p><strong>No personal or identifying information</strong> about students or staff is to be entered into any AI application or service. This includes names, student numbers, learning data, behavioural records, and any information that could be used to identify an individual.</p>
+        <p>When AI features are activated within existing platforms (e.g. Microsoft 365 Copilot, Google Gemini), schools must understand where data is processed, whether it leaves Australia, whether it is used to train AI models, and what retention policies apply.</p>
+        <p>Student work must not be entered into AI platforms by staff without transparency and consent.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.2</p>
+        <h3>Shadow IT and Shadow AI</h3>
+        <p>Shadow AI is the use of AI technologies outside of sanctioned channels. The VINE School recognises that shadow AI is most often a rational response to unmet needs.</p>
+        <div class="callout callout--highlight">
+          <p><strong>The VINE School does not aim for zero AI tool use outside the approved list. It aims for zero <em>covert</em> AI tool use.</strong></p>
+        </div>
+        <p>The primary risk is not that staff or students use AI, but that they use it without anyone knowing — making risks invisible and unmanageable. Unapproved AI use that is disclosed is treated as a governance opportunity, not a disciplinary matter.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.3</p>
+        <h3>Risk Zoning</h3>
+        <p>The VINE School applies proportional governance through a three-zone model:</p>
+        <div class="zone-grid">
+          <div class="zone-card zone-card--1">
+            <div class="zone-card__header">Zone 1</div>
+            <h4>Personal Productivity</h4>
+            <p>Staff use AI for brainstorming, drafting, organising notes, administrative tasks. No student data involved.</p>
+            <p class="zone-card__governance">General awareness and transparency. No formal approval required.</p>
+          </div>
+          <div class="zone-card zone-card--2">
+            <div class="zone-card__header">Zone 2</div>
+            <h4>Classroom-Facing</h4>
+            <p>AI used in teaching, generating resources, providing feedback, or any context where AI-generated content reaches students.</p>
+            <p class="zone-card__governance">Tools must be from the approved set or vetted through the fast-track process. Professional learning required.</p>
+          </div>
+          <div class="zone-card zone-card--3">
+            <div class="zone-card__header">Zone 3</div>
+            <h4>Student Data Involved</h4>
+            <p>AI processes student work, learning analytics, or reports. Personal/identifying information must not be entered.</p>
+            <p class="zone-card__governance">Formal approval required. Privacy impact assessment. IT and leadership sign-off.</p>
+          </div>
+        </div>
+        <p style="margin-top: 1rem;">The answer to "can I use this?" is not yes or no — it is <strong>"which zone does this fall into?"</strong></p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.4</p>
+        <h3>Approved Tools and the "Paved Road"</h3>
+        <p>The VINE School provides a self-service catalogue of pre-vetted AI technologies and services. The goal is to make the official path the path of least resistance. If the approved toolset is harder to access than the shadow alternative, shadow behaviour is a predictable and rational outcome.</p>
+        <p>Shadow AI is treated as a signal, not a failure. When patterns of unsanctioned use are identified, the school treats this as feedback that the approved toolset has a gap.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.5</p>
+        <h3>Vendor Transparency</h3>
+        <p>Before any AI tool is approved for Zone 2 or Zone 3 use, the VINE School requires clear answers from the vendor on data storage and processing location, training data use, data retention, Privacy Principles compliance, content filtering, and safety measures.</p>
+        <p>The VINE School notes that vendor terms and conditions change frequently and without notice. The AI Lead monitors changes to the terms of approved tools and flags material changes to school leadership.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.6</p>
+        <h3>Age-Appropriate Access</h3>
+        <p>Different year levels require different levels of AI access and different safeguards. The VINE School maintains an up-to-date register of age requirements for approved tools. Where a platform's terms of service specify a minimum age, the school enforces this.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.7</p>
+        <h3>The AI Lead</h3>
+        <p>The VINE School designates an AI Lead — a staff member with responsibility for coordinating the school's approach to AI across all three pillars. Responsibilities include coordinating professional learning, maintaining the approved tools catalogue, monitoring vendor terms, liaising with ICT on governance, supporting staff with AI integration, and serving as the first point of contact for AI-related queries.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.8</p>
+        <h3>Transparency in School Operations</h3>
+        <p>The VINE School discloses the use of AI in school operations, including administration, reporting, communications, and marketing. Any use of AI in generating student reports, parent communications, or public-facing content is reviewed by a human before distribution.</p>
+      </div>
+
+      <div class="statement">
+        <p class="statement__id">3.9</p>
+        <h3>AI in Meetings and Recordings</h3>
+        <p>AI-powered meeting recording, transcription, and summarisation tools must not be used in any meeting unless all participants have given their consent. This decision must be made at or prior to the start of each meeting and must not be treated as a standing arrangement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Roles -->
+  <section class="section">
+    <div class="container content-narrow">
+      <h2>Key Roles, Key Questions</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Key Questions</th>
+              <th>Guidance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ICT Manager</strong></td>
+              <td>How do we secure our systems when AI is embedded in everything? How do we manage shadow AI without being the "no" department?</td>
+              <td>3.1, 3.2, 3.3</td>
+            </tr>
+            <tr>
+              <td><strong>Business Manager</strong></td>
+              <td>What is the risk profile of AI technologies in use? What's our liability if student data ends up in an unapproved tool?</td>
+              <td>3.1, 3.3, 3.5</td>
+            </tr>
+            <tr>
+              <td><strong>AI Lead</strong></td>
+              <td>How do I keep track of vendor terms as they change? How do I support staff while maintaining governance?</td>
+              <td>3.2, 3.4, 3.5</td>
+            </tr>
+            <tr>
+              <td><strong>Teachers</strong></td>
+              <td>What can't I do? If I've been using a tool that isn't approved, what happens when I tell someone?</td>
+              <td>3.2, 3.3</td>
+            </tr>
+            <tr>
+              <td><strong>Principal</strong></td>
+              <td>Do I have a clear governance structure I can explain to the board and the community?</td>
+              <td>3.1, 3.2, 3.4, 3.7</td>
+            </tr>
+            <tr>
+              <td><strong>Board Directors</strong></td>
+              <td>Are we compliant with Australian Privacy Principles? Is our governance proportional?</td>
+              <td>3.1, 3.2, 3.3, 3.7</td>
+            </tr>
+            <tr>
+              <td><strong>Parents</strong></td>
+              <td>Is the school keeping track of what AI technologies are being used with my child's data?</td>
+              <td>3.1, 3.4, 3.5, 3.7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      <div class="nav-links">
+        <a href="/toolkit" class="btn btn--primary">View practical tools for this section</a>
+        <a href="/guidelines/teaching-and-learning" class="btn btn--outline">&larr; Back to Teaching &amp; Learning</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .callout {
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+  }
+  .callout--highlight {
+    background: var(--color-highlight-light);
+    border-left: 4px solid var(--color-highlight);
+  }
+  .callout p { margin: 0; font-size: 1.0625rem; }
+
+  .zone-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .zone-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-top: 4px solid var(--color-gray-300);
+  }
+  .zone-card--1 { border-top-color: #22c55e; }
+  .zone-card--2 { border-top-color: #f59e0b; }
+  .zone-card--3 { border-top-color: #ef4444; }
+  .zone-card__header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+  }
+  .zone-card--1 .zone-card__header { color: #22c55e; }
+  .zone-card--2 .zone-card__header { color: #f59e0b; }
+  .zone-card--3 .zone-card__header { color: #ef4444; }
+  .zone-card h4 { font-size: 1rem; margin-bottom: 0.5rem; }
+  .zone-card p { font-size: 0.875rem; color: var(--color-gray-700); margin-bottom: 0.5rem; }
+  .zone-card__governance {
+    font-size: 0.8125rem !important;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .zone-grid { grid-template-columns: 1fr; }
+  }
+</style>

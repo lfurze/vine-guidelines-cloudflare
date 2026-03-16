@@ -1,0 +1,255 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <span class="badge">2026 Edition</span>
+        <h1>The VINE School<br />Generative AI Guidelines</h1>
+        <p class="lead">Practical, evidence-based guidance for K–12 schools navigating AI in education. Organised around three interconnected pillars — and designed to be adapted to your school's context.</p>
+        <div class="hero__actions">
+          <a href="/guidelines/teaching-and-learning" class="btn btn--primary">Explore the guidelines</a>
+          <a href="/toolkit" class="btn btn--outline">View the toolkit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venn Diagram Section -->
+  <section class="section venn-section">
+    <div class="container">
+      <div class="venn-wrap">
+        <div class="venn-intro">
+          <h2>Three pillars. One strategy.</h2>
+          <p class="lead">A teacher selecting an AI marking app is simultaneously making a teaching decision, a privacy decision, and an ethical decision. The centre of the Venn — where all three pillars meet — is where whole-school AI strategy sits.</p>
+        </div>
+        <div class="venn-diagram" role="img" aria-label="Venn diagram showing three overlapping pillars: Teaching and Learning, Ethics and Wellbeing, and Privacy and Security, with Whole-School AI Strategy at the centre">
+          <svg viewBox="0 0 600 550" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradTL" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#40b2cf" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#40b2cf" stop-opacity="0.08"/>
+              </linearGradient>
+              <linearGradient id="gradEW" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#1a2744" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#1a2744" stop-opacity="0.08"/>
+              </linearGradient>
+              <linearGradient id="gradPS" x1="100%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#2d8da6" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#2d8da6" stop-opacity="0.08"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Teaching & Learning circle (top centre) -->
+            <a href="/guidelines/teaching-and-learning" class="venn-circle" data-pillar="tl">
+              <circle cx="300" cy="195" r="175" fill="url(#gradTL)" stroke="#40b2cf" stroke-width="2.5" class="venn-circle__bg"/>
+              <text x="300" y="120" text-anchor="middle" class="venn-label" fill="#40b2cf">Teaching &amp;</text>
+              <text x="300" y="148" text-anchor="middle" class="venn-label" fill="#40b2cf">Learning</text>
+            </a>
+
+            <!-- Ethics & Wellbeing circle (bottom left) -->
+            <a href="/guidelines/ethics-and-wellbeing" class="venn-circle" data-pillar="ew">
+              <circle cx="195" cy="375" r="175" fill="url(#gradEW)" stroke="#1a2744" stroke-width="2.5" class="venn-circle__bg"/>
+              <text x="130" y="430" text-anchor="middle" class="venn-label" fill="#1a2744">Ethics &amp;</text>
+              <text x="130" y="458" text-anchor="middle" class="venn-label" fill="#1a2744">Wellbeing</text>
+            </a>
+
+            <!-- Privacy & Security circle (bottom right) -->
+            <a href="/guidelines/privacy-and-security" class="venn-circle" data-pillar="ps">
+              <circle cx="405" cy="375" r="175" fill="url(#gradPS)" stroke="#2d8da6" stroke-width="2.5" class="venn-circle__bg"/>
+              <text x="470" y="430" text-anchor="middle" class="venn-label" fill="#2d8da6">Privacy &amp;</text>
+              <text x="470" y="458" text-anchor="middle" class="venn-label" fill="#2d8da6">Security</text>
+            </a>
+
+            <!-- Intersection labels -->
+            <text x="230" y="290" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">AI Literacy</text>
+            <text x="230" y="308" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">&amp; Critical</text>
+            <text x="230" y="326" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">Thinking</text>
+
+            <text x="370" y="290" text-anchor="middle" class="venn-overlap-label" fill="#2d8da6">Data in</text>
+            <text x="370" y="308" text-anchor="middle" class="venn-overlap-label" fill="#2d8da6">Teaching &amp;</text>
+            <text x="370" y="326" text-anchor="middle" class="venn-overlap-label" fill="#2d8da6">Assessment</text>
+
+            <text x="300" y="420" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">Safety &amp;</text>
+            <text x="300" y="438" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">Transparency</text>
+
+            <!-- Centre label -->
+            <text x="300" y="350" text-anchor="middle" class="venn-centre" fill="#1a2744">Whole-School</text>
+            <text x="300" y="373" text-anchor="middle" class="venn-centre" fill="#1a2744">AI Strategy</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles Section -->
+  <section class="section section--gray" id="principles">
+    <div class="container">
+      <div class="content-narrow" style="text-align: center; margin-bottom: 3rem;">
+        <span class="badge">Foundation</span>
+        <h2>VINE School AI Principles</h2>
+        <p class="lead">Seven principles that anchor the VINE School's approach to GenAI — designed to outlast any individual tool or platform.</p>
+      </div>
+      <div class="principles-grid">
+        <div class="principle-card">
+          <div class="card__number">1</div>
+          <h3>AI is a technology, not a teacher</h3>
+          <p>Human judgement, expertise, and relationships remain central to education. AI supports teaching and learning but does not replace the role of educators, the importance of human connection, or the development of students' own thinking.</p>
+        </div>
+        <div class="principle-card">
+          <div class="card__number">2</div>
+          <h3>Transparency first</h3>
+          <p>When AI is used — by students, staff, or the school as an organisation — this should be disclosed. Transparency builds trust and enables informed decision-making by all members of the school community.</p>
+        </div>
+        <div class="principle-card">
+          <div class="card__number">3</div>
+          <h3>Privacy is non-negotiable</h3>
+          <p>Student data must be protected regardless of how convenient a tool is. Schools have a duty of care that extends to the digital tools and platforms they adopt or permit.</p>
+        </div>
+        <div class="principle-card">
+          <div class="card__number">4</div>
+          <h3>Respect for Indigenous knowledge and cultural diversity</h3>
+          <p>AI systems reflect the biases of their training data. The VINE School is committed to protecting Indigenous Cultural and Intellectual Property and ensuring AI use does not reinforce colonial perspectives or erase cultural diversity.</p>
+        </div>
+        <div class="principle-card">
+          <div class="card__number">5</div>
+          <h3>Equity of access</h3>
+          <p>AI should not widen the gap between those who have access to premium tools and those who do not. Schools have a responsibility to ensure AI-related opportunities and expectations are fair for all students.</p>
+        </div>
+        <div class="principle-card">
+          <div class="card__number">6</div>
+          <h3>Critical thinking over compliance</h3>
+          <p>The goal is students who can think critically with AI, not students who simply follow rules about AI. Education should prepare young people to negotiate life in an AI-rich world with discernment, ethical awareness, and agency.</p>
+        </div>
+        <div class="principle-card">
+          <div class="card__number">7</div>
+          <h3>Respect cognitive development</h3>
+          <p>Productive struggle is essential to learning. AI can scaffold thinking, but it can also bypass it. Schools should intentionally design curriculum and assessment to ensure students are cognitively challenged.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars overview -->
+  <section class="section">
+    <div class="container">
+      <div class="content-narrow" style="text-align: center; margin-bottom: 3rem;">
+        <span class="badge">Structure</span>
+        <h2>Explore the three pillars</h2>
+        <p class="lead">Each section follows a consistent structure: guiding statements, practical tools, and key questions for different stakeholders.</p>
+      </div>
+      <div class="card-grid">
+        <a href="/guidelines/teaching-and-learning" class="pillar-card pillar-card--tl">
+          <div class="pillar-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Teaching &amp; Learning</h3>
+          <p>AI literacy, academic integrity, the AI Assessment Scale, assessment design, professional learning, and cognitive offloading.</p>
+          <span class="pillar-card__link">Explore section &rarr;</span>
+        </a>
+        <a href="/guidelines/ethics-and-wellbeing" class="pillar-card pillar-card--ew">
+          <div class="pillar-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Ethics &amp; Wellbeing</h3>
+          <p>Bias, deepfakes, social chatbots, environmental impact, copyright, equity, and student wellbeing.</p>
+          <span class="pillar-card__link">Explore section &rarr;</span>
+        </a>
+        <a href="/guidelines/privacy-and-security" class="pillar-card pillar-card--ps">
+          <div class="pillar-card__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Privacy &amp; Security</h3>
+          <p>Data governance, shadow IT, risk zoning, vendor transparency, age-appropriate access, and the AI Lead role.</p>
+          <span class="pillar-card__link">Explore section &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--navy">
+    <div class="container" style="text-align: center;">
+      <h2>Designed to be adapted</h2>
+      <p style="max-width: 640px; margin: 0 auto 2rem; opacity: 0.85; font-size: 1.125rem;">These guidelines are published under CC BY-NC-SA 4.0 and written for a fictional "VINE School" so that schools can customise them to their own context.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/toolkit" class="btn btn--primary">Browse the toolkit</a>
+        <a href="/about" class="btn btn--outline" style="border-color: rgba(255,255,255,0.3); color: white;">Learn more</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(160deg, var(--color-white) 0%, var(--color-highlight-light) 50%, var(--color-white) 100%);
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+  .hero__content { max-width: 700px; }
+  .hero__actions { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+
+  .venn-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .venn-diagram { max-width: 520px; margin: 0 auto; }
+  .venn-diagram svg { width: 100%; height: auto; }
+  .venn-label { font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; font-weight: 700; }
+  .venn-overlap-label { font-family: 'Source Sans 3', sans-serif; font-size: 12px; font-weight: 500; opacity: 0.8; }
+  .venn-centre { font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; font-weight: 700; }
+  .venn-circle { text-decoration: none; cursor: pointer; }
+  .venn-circle__bg { transition: all 0.3s ease; }
+  .venn-circle:hover .venn-circle__bg { stroke-width: 4; filter: brightness(1.05); }
+
+  .principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .principle-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .principle-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  }
+  .principle-card h3 { font-size: 1.125rem; margin-bottom: 0.75rem; }
+  .principle-card p { font-size: 0.9375rem; color: var(--color-gray-700); margin-bottom: 0; }
+
+  .pillar-card {
+    display: block;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-top: 4px solid transparent;
+  }
+  .pillar-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  }
+  .pillar-card--tl { border-top-color: #40b2cf; }
+  .pillar-card--ew { border-top-color: #1a2744; }
+  .pillar-card--ps { border-top-color: #2d8da6; }
+  .pillar-card__icon { color: var(--color-highlight); margin-bottom: 1.25rem; }
+  .pillar-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+  .pillar-card p { color: var(--color-gray-700); font-size: 0.9375rem; margin-bottom: 1.25rem; }
+  .pillar-card__link { font-weight: 600; font-size: 0.9375rem; color: var(--color-highlight-dark); }
+
+  @media (max-width: 768px) {
+    .hero { padding: 3rem 0; }
+    .venn-wrap { grid-template-columns: 1fr; gap: 2rem; }
+  }
+</style>

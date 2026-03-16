@@ -1,0 +1,479 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+
+<BaseLayout title="Toolkit" description="Practical tools, checklists, and frameworks from the VINE School GenAI Guidelines — ready to adapt and use.">
+  <PageHero
+    title="Practical Toolkit"
+    subtitle="Ready-to-use tools, checklists, and frameworks that schools can adapt and implement immediately."
+    badge="Tools"
+  />
+
+  <!-- Quick nav -->
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="toolkit-nav">
+        <a href="#tl-tools" class="toolkit-nav__item toolkit-nav__item--tl">Teaching &amp; Learning</a>
+        <a href="#ew-tools" class="toolkit-nav__item toolkit-nav__item--ew">Ethics &amp; Wellbeing</a>
+        <a href="#ps-tools" class="toolkit-nav__item toolkit-nav__item--ps">Privacy &amp; Security</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching & Learning Tools -->
+  <section class="section section--gray" id="tl-tools">
+    <div class="container content-narrow">
+      <span class="badge">Section 1</span>
+      <h2>Teaching &amp; Learning Tools</h2>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 1.1</p>
+        <h3>AI Assessment Scale — Quick Reference Card</h3>
+        <p>The AI Assessment Scale should be included on assessment task sheets so that students understand the expectations for each task.</p>
+        <div class="aias-image">
+          <img src="/images/ai-assessment-scale.png" alt="The AI Assessment Scale — five levels from No AI to AI Exploration" />
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 1.2</p>
+        <h3>Assessment Design Checklist</h3>
+        <p>Use this checklist when designing or reviewing an assessment task. Complete before the task is issued to students.</p>
+
+        <h4>AI Level and Expectations</h4>
+        <ul class="checklist">
+          <li>Have I selected a level on the AI Assessment Scale for this task and communicated it clearly to students?</li>
+          <li>Is the rationale for this AI level clear — i.e., can I explain why this level is appropriate for this task and this cohort?</li>
+        </ul>
+
+        <h4>Process Visibility</h4>
+        <ul class="checklist">
+          <li>Does the task require students to show their working, drafts, or thinking process — not just a final product?</li>
+          <li>Are there built-in checkpoints where I can observe student thinking?</li>
+        </ul>
+
+        <h4>Task Authenticity and AI Resilience</h4>
+        <ul class="checklist">
+          <li>Have I tested this task against a current GenAI tool? Could a student submit a high-quality response generated entirely by AI?</li>
+          <li>Does the task draw on local, personal, or class-specific knowledge that a general AI model would not have?</li>
+          <li>Does the task require genuine evaluation, synthesis, or creation?</li>
+        </ul>
+
+        <h4>Equity and Inclusion</h4>
+        <ul class="checklist">
+          <li>Does the task advantage students with access to premium AI tools outside school?</li>
+          <li>Have I considered how this task works for students with diverse learning needs and EAL/D students?</li>
+        </ul>
+
+        <h4>Cognitive Development</h4>
+        <ul class="checklist">
+          <li>At the selected AI level, does the student still need to do the hard thinking — or has the AI done it for them?</li>
+          <li>Is this task a good use of the student's brain, a good use of the technology, or both?</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 1.3</p>
+        <h3>Critical AI Literacy Planning Framework</h3>
+        <p>Map Critical AI Literacy into existing curriculum using the four domains of the OECD/EC AI Literacy Framework.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Domain</th>
+                <th>English</th>
+                <th>Science</th>
+                <th>Humanities</th>
+                <th>Arts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Engaging with AI</strong></td>
+                <td>How predictive text and autocomplete shape writing</td>
+                <td>How AI is used in data analysis and scientific modelling</td>
+                <td>The history and social impact of automation</td>
+                <td>AI-generated art and questions of authorship</td>
+              </tr>
+              <tr>
+                <td><strong>2. Creating with AI</strong></td>
+                <td>Using AI to brainstorm, then critically evaluating suggestions</td>
+                <td>Using AI to generate hypotheses or analyse datasets</td>
+                <td>Using AI to explore multiple historical perspectives</td>
+                <td>Co-creating with AI tools and reflecting on the creative process</td>
+              </tr>
+              <tr>
+                <td><strong>3. Managing AI</strong></td>
+                <td>Fact-checking AI-generated text, identifying hallucinations</td>
+                <td>Evaluating AI model accuracy and limitations</td>
+                <td>Detecting cultural and ideological bias in AI outputs</td>
+                <td>Critiquing AI-generated work against human creative standards</td>
+              </tr>
+              <tr>
+                <td><strong>4. Designing with AI</strong></td>
+                <td>Prompt engineering as rhetorical composition</td>
+                <td>Designing experiments that use AI tools responsibly</td>
+                <td>Participating in discussions about AI governance and regulation</td>
+                <td>Designing interactive AI experiences and considering audience impact</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 1.4</p>
+        <h3>Professional Learning Audit</h3>
+        <p>Use this audit annually to evaluate the school's AI professional learning provision. Rate each area as Established, Developing, or Not Yet.</p>
+
+        <h4>Provision and Structure</h4>
+        <ul class="checklist">
+          <li>We run at least two whole-staff AI professional learning sessions per year</li>
+          <li>AI is integrated into existing PL strands, not treated as a standalone topic</li>
+          <li>A designated AI Lead or Digital Learning Lead coordinates AI PL across the school</li>
+        </ul>
+
+        <h4>Coverage Across the Three Pillars</h4>
+        <ul class="checklist">
+          <li>PL addresses Teaching and Learning (assessment design, AI literacy, cognitive offloading)</li>
+          <li>PL addresses Ethics and Wellbeing (deepfakes, bias, social chatbots, environmental impact)</li>
+          <li>PL addresses Privacy and Security (data governance, shadow AI, vendor vetting, risk zones)</li>
+        </ul>
+
+        <h4>Culture and Engagement</h4>
+        <ul class="checklist">
+          <li>Staff feel safe to experiment with AI tools without fear of judgement or reprimand</li>
+          <li>There are informal communities of practice where staff exchange AI ideas</li>
+          <li>Staff have designated time to explore and trial AI tools relevant to their roles</li>
+          <li>The school actively seeks cross-faculty collaboration on AI integration</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 1.5</p>
+        <h3>"A Good Use of Your Brain, or a Good Use of the Technology?"</h3>
+        <p>Discussion prompts for staff meetings, student discussions, or pastoral care sessions exploring the distinction between AI as a learning scaffold and AI as a cognitive shortcut.</p>
+
+        <h4>For Staff Meetings</h4>
+        <ul>
+          <li>Think of a task you recently set. If a student used AI to complete it, what thinking would they have skipped? Does that matter for this task?</li>
+          <li>Where in your subject is the "productive struggle"? How do you protect that when AI is available?</li>
+          <li>A colleague uses AI to write all their report comments. Is that a good use of the technology, or has something important been lost?</li>
+        </ul>
+
+        <h4>For Student Discussions</h4>
+        <ul>
+          <li>You ask AI to summarise a chapter you haven't read. You ask AI to summarise a chapter you have read. Are these the same thing?</li>
+          <li>You use AI to generate three essay plans, then pick the best one and write the essay yourself. Is this learning or shortcutting?</li>
+          <li>If you always use GPS, you never learn your way around. What's the equivalent in your subject?</li>
+        </ul>
+
+        <div class="callout callout--highlight">
+          <p><strong>The Core Question:</strong> For any use of AI, ask: "Is this a good use of your brain, or a good use of the technology?"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ethics & Wellbeing Tools -->
+  <section class="section" id="ew-tools">
+    <div class="container content-narrow">
+      <span class="badge">Section 2</span>
+      <h2>Ethics &amp; Wellbeing Tools</h2>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 2.1</p>
+        <h3>Deepfake Incident Response Protocol</h3>
+        <p>Use this protocol when a deepfake involving a student or staff member is reported or discovered. Adapted from eSafety Commissioner Respond 3A guidance (2025).</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Step</th>
+                <th>Timeline</th>
+                <th>Key Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Immediate Response</strong></td>
+                <td>Within hours</td>
+                <td>Prioritise wellbeing. Do not view, screenshot, save, or share the content. If sexually explicit and involves a minor, report immediately to local police.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Support</strong></td>
+                <td>Within 24 hours</td>
+                <td>Meet with affected student (and family). Offer counselling. Centre the affected person's agency.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Reporting</strong></td>
+                <td>24–48 hours</td>
+                <td>Report to eSafety Commissioner (esafety.gov.au). Follow school behaviour management protocols.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Communication</strong></td>
+                <td>As appropriate</td>
+                <td>Communicate with broader community if needed, without identifying the affected person. Use as a teaching opportunity.</td>
+              </tr>
+              <tr>
+                <td><strong>5. Follow-Up</strong></td>
+                <td>Ongoing</td>
+                <td>Regular check-ins with affected person. Review and update response protocol. Include deepfakes in consent education.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 2.2</p>
+        <h3>Teaching AI Ethics — Resource Bank</h3>
+        <p>The open-access resource site <a href="https://teachingaiethics.com" target="_blank" rel="noopener">teachingaiethics.com</a> provides inquiry questions, articles, and case studies for teaching AI ethics across disciplines. Published under CC BY-NC-SA 4.0.</p>
+        <p>Key topics include cognitive offloading, deepfakes, social chatbots, environmental impact, bias, and copyright.</p>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 2.3</p>
+        <h3>Bias Review Checklist</h3>
+        <p>Use before distributing any AI-generated content to students — including lesson materials, assessment tasks, exemplars, images, and feedback.</p>
+
+        <h4>Representation</h4>
+        <ul class="checklist">
+          <li>Does the content represent diverse perspectives, or does it default to a single cultural viewpoint?</li>
+          <li>Are people from different genders, ethnicities, abilities, and backgrounds represented equitably?</li>
+          <li>If images were generated by AI, do they reinforce visual stereotypes?</li>
+        </ul>
+
+        <h4>Cultural Sensitivity and Indigenous Knowledge</h4>
+        <ul class="checklist">
+          <li>Does the content respect Indigenous Cultural and Intellectual Property (ICIP)?</li>
+          <li>Does the content present non-Western cultures and histories accurately?</li>
+        </ul>
+
+        <h4>Accuracy and Framing</h4>
+        <ul class="checklist">
+          <li>Are claims factually accurate? (AI models frequently hallucinate)</li>
+          <li>Does the content present contested topics as settled?</li>
+        </ul>
+
+        <h4>Language and Tone</h4>
+        <ul class="checklist">
+          <li>Is the language inclusive and accessible?</li>
+          <li>Is the reading level and tone appropriate for the intended audience?</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 2.4</p>
+        <h3>Social Chatbot Awareness Guide</h3>
+        <p>Designed to help parents, carers, and school staff understand social chatbots and their potential impact on young people.</p>
+
+        <h4>Warning Signs of Problematic Use</h4>
+        <ul>
+          <li>Referring to a chatbot as a "friend" or "partner"</li>
+          <li>Becoming distressed when unable to access the chatbot</li>
+          <li>Withdrawing from peer relationships</li>
+          <li>Secretive behaviour around chatbot use</li>
+          <li>Using a chatbot as a primary source of emotional support</li>
+          <li>Spending money on premium chatbot features</li>
+        </ul>
+
+        <h4>Starting Conversations</h4>
+        <ul>
+          <li><strong>Start with curiosity:</strong> "I've been reading about apps like Character.AI. Have you come across them?"</li>
+          <li><strong>Explore the appeal:</strong> "What do you like about talking to it?"</li>
+          <li><strong>Discuss the design:</strong> "These apps are designed to keep you coming back. How do you think they do that?"</li>
+          <li><strong>Name the difference:</strong> "A chatbot can respond to what you say, but it doesn't actually care about you."</li>
+          <li><strong>Set boundaries together</strong> rather than banning outright.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy & Security Tools -->
+  <section class="section section--gray" id="ps-tools">
+    <div class="container content-narrow">
+      <span class="badge">Section 3</span>
+      <h2>Privacy &amp; Security Tools</h2>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 3.1</p>
+        <h3>Risk Zone Quick Reference</h3>
+        <p>Use this to determine which zone an AI use falls into:</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>If yes...</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Does the tool process any student work, learning data, or reports?</td>
+                <td><strong style="color: #ef4444;">Zone 3</strong> — Formal approval required. Speak to ICT Manager.</td>
+              </tr>
+              <tr>
+                <td>Will AI-generated content reach students?</td>
+                <td><strong style="color: #f59e0b;">Zone 2</strong> — Use approved tools. Ensure PL completed. Disclose to students.</td>
+              </tr>
+              <tr>
+                <td>Is this just for your own professional productivity?</td>
+                <td><strong style="color: #22c55e;">Zone 1</strong> — Go ahead. Be transparent. Don't enter PII or student data.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><em>If unsure which zone applies, default to the higher zone and check with the AI Lead or ICT Manager.</em></p>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 3.2</p>
+        <h3>AI Tool Vetting Checklist</h3>
+        <p>Adapted from the UK Department for Education's Generative AI Product Safety Standards (2025). VINE member schools are encouraged to share completed checklists.</p>
+
+        <ul class="checklist">
+          <li>Where is data stored? Is it within Australia or a jurisdiction with equivalent privacy protections?</li>
+          <li>Does the vendor confirm that user data is NOT used to train AI models?</li>
+          <li>Is there a clear data retention policy? Can data be deleted on request?</li>
+          <li>Does the tool comply with the Australian Privacy Principles?</li>
+          <li>Are content filtering and safety measures in place?</li>
+          <li>Does the tool meet the minimum age requirements for the intended student cohort?</li>
+          <li>Is the tool accessible to students with diverse learning needs?</li>
+          <li>Does the vendor provide transparency about how the AI model works and its limitations?</li>
+          <li>Is there a clear process for reporting safety concerns or inaccurate outputs?</li>
+          <li>Does the vendor commit to notifying schools of material changes to terms and conditions?</li>
+          <li>Does the tool protect student intellectual property?</li>
+          <li>Can usage be logged and monitored for safeguarding purposes?</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 3.3</p>
+        <h3>Shadow AI Audit — Conversation Starters</h3>
+        <p>Questions for staff meetings, surveys, or one-on-ones to surface shadow AI use without creating a punitive atmosphere:</p>
+        <ul>
+          <li>"What AI technologies have you tried recently — approved or otherwise?"</li>
+          <li>"Is there anything you wish you could do with AI but can't, because of access or policy?"</li>
+          <li>"Has anyone found a platform that works really well for a specific task? Let's talk about whether we can get it approved."</li>
+          <li>"Do we know what AI applications are actually being used across the school — not just what's approved?"</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 3.4</p>
+        <h3>BMIT Transition Template</h3>
+        <p>When shadow AI use is disclosed or discovered, this template guides a structured conversation to determine an appropriate path forward.</p>
+
+        <h4>Step 1: Document the Current Use</h4>
+        <p>What tool? Who is using it? What for? How long? What data is being entered?</p>
+
+        <h4>Step 2: Assess Against the Zone Framework</h4>
+        <p>Could the tool be Approved, Conditionally Approved, or is it Not Permitted?</p>
+
+        <h4>Step 3: Determine the Transition Pathway</h4>
+        <div class="pathway-grid">
+          <div class="pathway"><strong>A: Permit &amp; Monitor</strong><br />Tool meets Zone 2/3 requirements.</div>
+          <div class="pathway"><strong>B: Permit with Conditions</strong><br />Tool has value but requires safeguards.</div>
+          <div class="pathway"><strong>C: Pause &amp; Review</strong><br />Compliance status unclear. Max 4 weeks.</div>
+          <div class="pathway"><strong>D: Discontinue</strong><br />Tool cannot meet compliance requirements.</div>
+        </div>
+
+        <div class="callout callout--highlight" style="margin-top: 1.5rem;">
+          <p><strong>Key principle:</strong> Staff who disclose unapproved tool use are helping the school maintain its security posture and should be thanked, not sanctioned.</p>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 3.5</p>
+        <h3>AI-Adjacent Policy Audit</h3>
+        <p>AI intersects with policies schools already have in place. Use this checklist to audit existing school policies.</p>
+        <ul class="checklist">
+          <li>Academic Integrity Policy — Does it address AI use, disclosure requirements, and the AI Assessment Scale?</li>
+          <li>Privacy Policy — Does it address AI tool data governance, vendor vetting, and student data?</li>
+          <li>Digital Citizenship / Acceptable Use Policy — Does it address social chatbots, deepfakes, and AI-specific risks?</li>
+          <li>Staff Code of Conduct — Does it address staff AI use for reporting, communications, and meeting recording?</li>
+          <li>Child Safety / Safeguarding Policy — Does it address AI-generated harms including deepfakes?</li>
+          <li>Assessment Policy — Does it address AI-resilient assessment design and cognitive offloading?</li>
+          <li>Professional Learning Policy — Does it include AI professional learning provision?</li>
+          <li>IT Governance / Procurement Policy — Does it include AI tool vetting and shadow AI protocols?</li>
+          <li>Communications and Marketing Policy — Does it address AI-generated content and disclosure?</li>
+          <li>Wellbeing Policy — Does it address AI-related student anxiety, screen time, and social chatbot risks?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .toolkit-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .toolkit-nav__item {
+    padding: 0.75rem 1.5rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border: 2px solid var(--color-gray-200);
+    transition: all 0.2s ease;
+  }
+  .toolkit-nav__item:hover {
+    border-color: var(--color-highlight);
+    background: var(--color-highlight-light);
+  }
+  .toolkit-nav__item--tl { color: #40b2cf; }
+  .toolkit-nav__item--ew { color: #1a2744; }
+  .toolkit-nav__item--ps { color: #2d8da6; }
+
+  .aias-image {
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .aias-image img { display: block; width: 100%; }
+
+  ul:not(.checklist) {
+    margin: 0.5rem 0 1rem 1.5rem;
+    line-height: 1.8;
+  }
+
+  h4 {
+    margin-top: 1.5rem;
+  }
+
+  .callout {
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+  }
+  .callout--highlight {
+    background: var(--color-highlight-light);
+    border-left: 4px solid var(--color-highlight);
+  }
+  .callout p { margin: 0; }
+
+  .pathway-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .pathway {
+    background: var(--color-gray-50);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .pathway-grid { grid-template-columns: 1fr; }
+  }
+</style>
