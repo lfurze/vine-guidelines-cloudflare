@@ -51,7 +51,8 @@ const { title, description = 'The VINE School Generative AI Guidelines — pract
     <div class="container">
       <div class="footer__inner">
         <div class="footer__col">
-          <img src="/images/vine-logo.jpg" alt="VINE" class="footer__logo" />
+          <p class="footer__brand">VINE</p>
+          <p class="footer__brand-sub">Victorian ICT Network for Education</p>
           <p class="footer__tagline">Share, Learn and Grow</p>
         </div>
         <div class="footer__col">
@@ -194,11 +195,20 @@ const { title, description = 'The VINE School Generative AI Guidelines — pract
       margin-bottom: 3rem;
     }
 
-    .footer__logo {
-      height: 36px;
-      width: auto;
-      filter: brightness(0) invert(1);
-      margin-bottom: 0.75rem;
+    .footer__brand {
+      font-family: var(--font-sans);
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--color-white);
+      margin-bottom: 0.125rem;
+    }
+
+    .footer__brand-sub {
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      color: var(--color-highlight);
+      margin-bottom: 0.5rem;
     }
 
     .footer__tagline {

@@ -113,6 +113,9 @@ img {
 .section--navy a {
   color: var(--color-highlight);
 }
+.section--navy .btn--primary {
+  color: var(--color-white);
+}
 
 .badge {
   display: inline-block;

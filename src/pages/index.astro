@@ -27,58 +27,46 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="lead">A teacher selecting an AI marking app is simultaneously making a teaching decision, a privacy decision, and an ethical decision. The centre of the Venn — where all three pillars meet — is where whole-school AI strategy sits.</p>
         </div>
         <div class="venn-diagram" role="img" aria-label="Venn diagram showing three overlapping pillars: Teaching and Learning, Ethics and Wellbeing, and Privacy and Security, with Whole-School AI Strategy at the centre">
-          <svg viewBox="0 0 600 550" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="gradTL" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#40b2cf" stop-opacity="0.15"/>
-                <stop offset="100%" stop-color="#40b2cf" stop-opacity="0.08"/>
-              </linearGradient>
-              <linearGradient id="gradEW" x1="0%" y1="100%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#1a2744" stop-opacity="0.15"/>
-                <stop offset="100%" stop-color="#1a2744" stop-opacity="0.08"/>
-              </linearGradient>
-              <linearGradient id="gradPS" x1="100%" y1="100%" x2="0%" y2="0%">
-                <stop offset="0%" stop-color="#2d8da6" stop-opacity="0.15"/>
-                <stop offset="100%" stop-color="#2d8da6" stop-opacity="0.08"/>
-              </linearGradient>
+              <radialGradient id="gradTL" cx="50%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="#40b2cf" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#40b2cf" stop-opacity="0.06"/>
+              </radialGradient>
+              <radialGradient id="gradEW" cx="40%" cy="55%" r="55%">
+                <stop offset="0%" stop-color="#1a2744" stop-opacity="0.14"/>
+                <stop offset="100%" stop-color="#1a2744" stop-opacity="0.05"/>
+              </radialGradient>
+              <radialGradient id="gradPS" cx="60%" cy="55%" r="55%">
+                <stop offset="0%" stop-color="#2d8da6" stop-opacity="0.14"/>
+                <stop offset="100%" stop-color="#2d8da6" stop-opacity="0.05"/>
+              </radialGradient>
             </defs>
 
             <!-- Teaching & Learning circle (top centre) -->
             <a href="/guidelines/teaching-and-learning" class="venn-circle" data-pillar="tl">
-              <circle cx="300" cy="195" r="175" fill="url(#gradTL)" stroke="#40b2cf" stroke-width="2.5" class="venn-circle__bg"/>
-              <text x="300" y="120" text-anchor="middle" class="venn-label" fill="#40b2cf">Teaching &amp;</text>
-              <text x="300" y="148" text-anchor="middle" class="venn-label" fill="#40b2cf">Learning</text>
+              <circle cx="300" cy="200" r="180" fill="url(#gradTL)" stroke="#40b2cf" stroke-width="2" class="venn-circle__bg" opacity="0.9"/>
+              <text x="300" y="125" text-anchor="middle" class="venn-label" fill="#2d8da6">Teaching &amp;</text>
+              <text x="300" y="155" text-anchor="middle" class="venn-label" fill="#2d8da6">Learning</text>
             </a>
 
             <!-- Ethics & Wellbeing circle (bottom left) -->
             <a href="/guidelines/ethics-and-wellbeing" class="venn-circle" data-pillar="ew">
-              <circle cx="195" cy="375" r="175" fill="url(#gradEW)" stroke="#1a2744" stroke-width="2.5" class="venn-circle__bg"/>
-              <text x="130" y="430" text-anchor="middle" class="venn-label" fill="#1a2744">Ethics &amp;</text>
-              <text x="130" y="458" text-anchor="middle" class="venn-label" fill="#1a2744">Wellbeing</text>
+              <circle cx="200" cy="375" r="180" fill="url(#gradEW)" stroke="#1a2744" stroke-width="2" class="venn-circle__bg" opacity="0.9"/>
+              <text x="130" y="440" text-anchor="middle" class="venn-label" fill="#1a2744">Ethics &amp;</text>
+              <text x="130" y="470" text-anchor="middle" class="venn-label" fill="#1a2744">Wellbeing</text>
             </a>
 
             <!-- Privacy & Security circle (bottom right) -->
             <a href="/guidelines/privacy-and-security" class="venn-circle" data-pillar="ps">
-              <circle cx="405" cy="375" r="175" fill="url(#gradPS)" stroke="#2d8da6" stroke-width="2.5" class="venn-circle__bg"/>
-              <text x="470" y="430" text-anchor="middle" class="venn-label" fill="#2d8da6">Privacy &amp;</text>
-              <text x="470" y="458" text-anchor="middle" class="venn-label" fill="#2d8da6">Security</text>
+              <circle cx="400" cy="375" r="180" fill="url(#gradPS)" stroke="#2d8da6" stroke-width="2" class="venn-circle__bg" opacity="0.9"/>
+              <text x="470" y="440" text-anchor="middle" class="venn-label" fill="#2d8da6">Privacy &amp;</text>
+              <text x="470" y="470" text-anchor="middle" class="venn-label" fill="#2d8da6">Security</text>
             </a>
 
-            <!-- Intersection labels -->
-            <text x="230" y="290" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">AI Literacy</text>
-            <text x="230" y="308" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">&amp; Critical</text>
-            <text x="230" y="326" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">Thinking</text>
-
-            <text x="370" y="290" text-anchor="middle" class="venn-overlap-label" fill="#2d8da6">Data in</text>
-            <text x="370" y="308" text-anchor="middle" class="venn-overlap-label" fill="#2d8da6">Teaching &amp;</text>
-            <text x="370" y="326" text-anchor="middle" class="venn-overlap-label" fill="#2d8da6">Assessment</text>
-
-            <text x="300" y="420" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">Safety &amp;</text>
-            <text x="300" y="438" text-anchor="middle" class="venn-overlap-label" fill="#1a2744">Transparency</text>
-
             <!-- Centre label -->
-            <text x="300" y="350" text-anchor="middle" class="venn-centre" fill="#1a2744">Whole-School</text>
-            <text x="300" y="373" text-anchor="middle" class="venn-centre" fill="#1a2744">AI Strategy</text>
+            <text x="300" y="345" text-anchor="middle" class="venn-centre" fill="#1a2744">Whole-School</text>
+            <text x="300" y="370" text-anchor="middle" class="venn-centre" fill="#1a2744">AI Strategy</text>
           </svg>
         </div>
       </div>
@@ -200,12 +188,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
   .venn-diagram { max-width: 520px; margin: 0 auto; }
   .venn-diagram svg { width: 100%; height: auto; }
-  .venn-label { font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; font-weight: 700; }
-  .venn-overlap-label { font-family: 'Source Sans 3', sans-serif; font-size: 12px; font-weight: 500; opacity: 0.8; }
-  .venn-centre { font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; font-weight: 700; }
+  .venn-label { font-family: 'Source Serif 4', Georgia, serif; font-size: 24px; font-weight: 700; }
+  .venn-centre { font-family: 'Source Serif 4', Georgia, serif; font-size: 16px; font-weight: 700; }
   .venn-circle { text-decoration: none; cursor: pointer; }
-  .venn-circle__bg { transition: all 0.3s ease; }
-  .venn-circle:hover .venn-circle__bg { stroke-width: 4; filter: brightness(1.05); }
+  .venn-circle__bg { transition: all 0.35s ease; }
+  .venn-circle:hover .venn-circle__bg { stroke-width: 3.5; opacity: 1; }
 
   .principles-grid {
     display: grid;
