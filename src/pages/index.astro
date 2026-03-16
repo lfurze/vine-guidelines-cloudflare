@@ -196,8 +196,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .principles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+  .principle-card:last-child {
+    grid-column: 2;
   }
   .principle-card {
     background: var(--color-white);
@@ -238,5 +241,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   @media (max-width: 768px) {
     .hero { padding: 3rem 0; }
     .venn-wrap { grid-template-columns: 1fr; gap: 2rem; }
+    .principles-grid { grid-template-columns: 1fr; }
+    .principle-card:last-child { grid-column: auto; }
   }
 </style>
