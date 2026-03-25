@@ -27,7 +27,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="lead">A teacher selecting an AI marking app is simultaneously making a teaching decision, a privacy decision, and an ethical decision. The centre of the Venn — where all three pillars meet — is where whole-school AI strategy sits.</p>
         </div>
         <div class="venn-diagram" role="img" aria-label="Venn diagram showing three overlapping pillars: Teaching and Learning, Ethics and Wellbeing, and Privacy and Security, with Whole-School AI Strategy at the centre">
-          <svg viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <radialGradient id="gradTL" cx="50%" cy="40%" r="55%">
                 <stop offset="0%" stop-color="#40b2cf" stop-opacity="0.18"/>
@@ -53,20 +53,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <!-- Ethics & Wellbeing circle (bottom left) -->
             <a href="/guidelines/ethics-and-wellbeing" class="venn-circle" data-pillar="ew">
               <circle cx="200" cy="375" r="180" fill="url(#gradEW)" stroke="#1a2744" stroke-width="2" class="venn-circle__bg" opacity="0.9"/>
-              <text x="130" y="440" text-anchor="middle" class="venn-label" fill="#1a2744">Ethics &amp;</text>
-              <text x="130" y="470" text-anchor="middle" class="venn-label" fill="#1a2744">Wellbeing</text>
+              <text x="130" y="370" text-anchor="middle" class="venn-label" fill="#1a2744">Ethics &amp;</text>
+              <text x="130" y="398" text-anchor="middle" class="venn-label" fill="#1a2744">Wellbeing</text>
             </a>
 
             <!-- Privacy & Security circle (bottom right) -->
             <a href="/guidelines/privacy-and-security" class="venn-circle" data-pillar="ps">
               <circle cx="400" cy="375" r="180" fill="url(#gradPS)" stroke="#2d8da6" stroke-width="2" class="venn-circle__bg" opacity="0.9"/>
-              <text x="470" y="440" text-anchor="middle" class="venn-label" fill="#2d8da6">Privacy &amp;</text>
-              <text x="470" y="470" text-anchor="middle" class="venn-label" fill="#2d8da6">Security</text>
+              <text x="470" y="370" text-anchor="middle" class="venn-label" fill="#2d8da6">Privacy &amp;</text>
+              <text x="470" y="398" text-anchor="middle" class="venn-label" fill="#2d8da6">Security</text>
             </a>
-
-            <!-- Centre label -->
-            <text x="300" y="345" text-anchor="middle" class="venn-centre" fill="#1a2744">Whole-School</text>
-            <text x="300" y="370" text-anchor="middle" class="venn-centre" fill="#1a2744">AI Strategy</text>
           </svg>
         </div>
       </div>
@@ -162,7 +158,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="section section--navy">
     <div class="container" style="text-align: center;">
       <h2>Designed to be adapted</h2>
-      <p style="max-width: 640px; margin: 0 auto 2rem; opacity: 0.85; font-size: 1.125rem;">These guidelines are published under CC BY-NC-SA 4.0 and written for a fictional "VINE School" so that schools can customise them to their own context.</p>
+      <p style="max-width: 640px; margin: 0 auto 2rem; opacity: 0.85; font-size: 1.125rem;">These guidelines are your school's AI policy. Rather than a standalone AI policy document that dates quickly, they integrate AI governance across your existing policy frameworks. Published under CC BY-NC-SA 4.0 and written for a fictional "VINE School" so that schools can customise them to their own context.</p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
         <a href="/toolkit" class="btn btn--primary">Browse the toolkit</a>
         <a href="/about" class="btn btn--outline" style="border-color: rgba(255,255,255,0.3); color: white;">Learn more</a>

@@ -22,15 +22,16 @@ import PageHero from '../../components/PageHero.astro';
     <div class="container content-narrow">
       <h2>Guiding Statements</h2>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-1">
         <p class="statement__id">1.1</p>
         <h3>Critical AI Literacy</h3>
         <p>The VINE School integrates Critical AI literacy into existing subject areas rather than teaching it as a standalone topic. Each faculty is responsible for identifying where AI intersects with their discipline and incorporating this into curriculum planning.</p>
         <p>Critical AI literacy encompasses four domains, adapted from the OECD/EC framework: <strong>engaging</strong> with AI (understanding what it is and how it works), <strong>creating</strong> with AI (using AI technologies purposefully and ethically), <strong>managing</strong> AI (evaluating outputs, identifying bias, and understanding limitations), and <strong>designing</strong> with AI (contributing to how AI is developed and deployed).</p>
+        <p>In mathematics and numeracy, AI tools present distinct considerations: calculators and computational aids have long been part of the discipline, and schools should consider how generative AI extends or complicates existing norms around tool use in mathematical reasoning.</p>
         <p>Critical AI literacy extends beyond "how to use AI" to encompass "when to use it, when not to, and why."</p>
       </div>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-2">
         <p class="statement__id">1.2</p>
         <h3>Academic Integrity</h3>
         <p>Academic integrity remains essential to all disciplines and must be clearly articulated to students. The VINE School's approach to academic integrity includes the responsible use of AI:</p>
@@ -39,7 +40,7 @@ import PageHero from '../../components/PageHero.astro';
         </blockquote>
       </div>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-3">
         <p class="statement__id">1.3</p>
         <h3>The AI Assessment Scale</h3>
         <p>The VINE School uses the AI Assessment Scale to provide a clear, shared framework for communicating the appropriate level of AI use in any given assessment task. The scale has five levels.</p>
@@ -49,7 +50,7 @@ import PageHero from '../../components/PageHero.astro';
         </div>
       </div>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-4">
         <p class="statement__id">1.4</p>
         <h3>Assessment Design</h3>
         <p>Assessment practices must be designed with AI in mind, not merely policed after the fact. The VINE School encourages assessment approaches that are resilient to AI misuse while remaining authentic and meaningful. These include:</p>
@@ -62,32 +63,32 @@ import PageHero from '../../components/PageHero.astro';
         </ul>
       </div>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-5">
         <p class="statement__id">1.5</p>
         <h3>AI Detection</h3>
         <p>The VINE School <strong>does not approve</strong> the use of AI detection tools as the sole basis for academic integrity decisions. International evidence consistently demonstrates that detection tools produce unreliable results and are biased against multilingual learners and students for whom English is an additional language.</p>
         <p>Schools seeking to address concerns about AI use in assessment should focus on assessment design and transparent expectations rather than detection.</p>
       </div>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-6">
         <p class="statement__id">1.6</p>
         <h3>Professional Learning</h3>
         <p>Staff require ongoing, embedded professional learning to engage with AI in their practice. The VINE School is committed to providing this as a school responsibility, not an individual one. Professional learning includes:</p>
         <ul>
-          <li>A minimum of one whole-staff session per semester</li>
+          <li>AI considerations addressed within at least one whole-staff session per semester — whether as a dedicated AI focus or integrated within broader teaching and learning priorities</li>
           <li>Regular opportunities through communities of practice and peer collaboration</li>
           <li>Designated time for teachers to explore and evaluate AI technologies relevant to their discipline</li>
         </ul>
         <p>An AI Lead is designated to coordinate professional learning, curate resources, and serve as a point of contact for AI-related questions across the school.</p>
       </div>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-7">
         <p class="statement__id">1.7</p>
         <h3>Cognitive Offloading</h3>
         <p>The VINE School recognises that AI use exists on a spectrum from genuine learning support to "cognitive offloading" — where students rely on AI instead of developing their own thinking. Teachers are supported to distinguish between AI use that scaffolds learning (operating within the student's zone of proximal development) and AI use that bypasses it.</p>
       </div>
 
-      <div class="statement">
+      <div class="statement" id="statement-1-8">
         <p class="statement__id">1.8</p>
         <h3>Staff Use of AI for Reporting and Administration</h3>
         <p>The use of speech-to-text tools and GenAI for proofreading, editing, and refining the clarity of report comments is approved, provided that the substance of the feedback reflects the teacher's own professional judgement. AI should not be used to wholly generate student feedback or report comments.</p>
@@ -112,34 +113,34 @@ import PageHero from '../../components/PageHero.astro';
           </thead>
           <tbody>
             <tr>
-              <td><strong>AP Curriculum</strong></td>
+              <td><strong>Head of Curriculum</strong></td>
               <td>What does current research suggest about the impact of GenAI on critical and creative thinking? How do we redesign assessment without losing rigour?</td>
-              <td>1.1, 1.3, 1.4, 1.7</td>
+              <td><a href="#statement-1-1">1.1</a>, <a href="#statement-1-3">1.3</a>, <a href="#statement-1-4">1.4</a>, <a href="#statement-1-7">1.7</a></td>
             </tr>
             <tr>
               <td><strong>Teachers</strong></td>
               <td>What can I actually use AI for in my classroom? How do I set clear, consistent expectations for students?</td>
-              <td>1.1, 1.2, 1.3</td>
+              <td><a href="#statement-1-1">1.1</a>, <a href="#statement-1-2">1.2</a>, <a href="#statement-1-3">1.3</a></td>
             </tr>
             <tr>
               <td><strong>Students</strong></td>
               <td>Can I use AI in class? Is it cheating? What exactly do I need to acknowledge, and how?</td>
-              <td>1.2, 1.3</td>
+              <td><a href="#statement-1-2">1.2</a>, <a href="#statement-1-3">1.3</a></td>
             </tr>
             <tr>
               <td><strong>Parents</strong></td>
               <td>Is my child learning, or is the AI learning for them? How would I know the difference?</td>
-              <td>1.1, 1.7</td>
+              <td><a href="#statement-1-1">1.1</a>, <a href="#statement-1-7">1.7</a></td>
             </tr>
             <tr>
               <td><strong>Principal</strong></td>
               <td>Are our assessment practices defensible? Are we keeping pace with comparable schools?</td>
-              <td>1.3, 1.4, 1.6</td>
+              <td><a href="#statement-1-3">1.3</a>, <a href="#statement-1-4">1.4</a>, <a href="#statement-1-6">1.6</a></td>
             </tr>
             <tr>
               <td><strong>Board Directors</strong></td>
               <td>Are we treating AI governance with the same rigour as other high-risk compliance areas?</td>
-              <td>1.2, 1.3, 1.4</td>
+              <td><a href="#statement-1-2">1.2</a>, <a href="#statement-1-3">1.3</a>, <a href="#statement-1-4">1.4</a></td>
             </tr>
           </tbody>
         </table>
