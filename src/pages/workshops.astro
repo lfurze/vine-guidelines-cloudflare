@@ -1,0 +1,439 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+
+<BaseLayout title="Workshops" description="Launch Day workshop stations — explore the VINE 2026 GenAI Guidelines toolkit through structured discussion and collaborative feedback.">
+  <PageHero
+    title="Launch Day Workshops"
+    subtitle="Three rotating stations, 20 minutes each. Explore a tool, discuss with your table, and share your thinking on the Padlet."
+    badge="31 March 2026"
+  />
+
+  <!-- Workshop cards -->
+  <section class="section">
+    <div class="container">
+      <div class="workshop-stack">
+
+        <!-- Station A: Teaching & Learning -->
+        <a href="#station-a" class="workshop-card workshop-card--tl">
+          <div class="workshop-card__badge">Station A</div>
+          <div class="workshop-card__content">
+            <span class="workshop-card__section">Teaching &amp; Learning</span>
+            <h2>A Good Use of Your Brain, or the Technology?</h2>
+            <p>Discussion prompts exploring the line between AI as a learning scaffold and AI as a cognitive shortcut.</p>
+          </div>
+          <div class="workshop-card__arrow">&darr;</div>
+        </a>
+
+        <!-- Station B: Ethics & Wellbeing -->
+        <a href="#station-b" class="workshop-card workshop-card--ew">
+          <div class="workshop-card__badge">Station B</div>
+          <div class="workshop-card__content">
+            <span class="workshop-card__section">Ethics &amp; Wellbeing</span>
+            <h2>Deepfake Incident Response Protocol</h2>
+            <p>A step-by-step protocol for responding when a deepfake involving a student or staff member is reported.</p>
+          </div>
+          <div class="workshop-card__arrow">&darr;</div>
+        </a>
+
+        <!-- Station C: Privacy & Security -->
+        <a href="#station-c" class="workshop-card workshop-card--ps">
+          <div class="workshop-card__badge">Station C</div>
+          <div class="workshop-card__content">
+            <span class="workshop-card__section">Privacy &amp; Security</span>
+            <h2>Shadow AI Audit</h2>
+            <p>Conversation starters to surface unapproved AI use across your school — without creating a punitive atmosphere.</p>
+          </div>
+          <div class="workshop-card__arrow">&darr;</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Station A Detail -->
+  <section class="section section--gray" id="station-a">
+    <div class="container content-narrow">
+      <span class="badge" style="background: color-mix(in srgb, var(--color-tl) 15%, white); color: var(--color-tl);">Station A &middot; Teaching &amp; Learning</span>
+      <h2>"A Good Use of Your Brain, or a Good Use of the Technology?"</h2>
+
+      <div class="workshop-preamble">
+        <p>This short workshop is designed to give you time to explore one of the tools from the VINE 2026 Guidelines, and provide general feedback on the document. Use the tool below as a discussion prompt for the first <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your thoughts, questions, and feedback on the <strong>Teaching &amp; Learning</strong> section.</p>
+      </div>
+
+      <div class="workshop-prompt">
+        <h3>Discussion Prompt</h3>
+        <p>The guidelines argue that the key question for any AI use in schools is: <em>"Is this a good use of your brain, or a good use of the technology?"</em></p>
+        <p>Work through the prompts below with your table. Pick one staff question and one student question to start — then consider where the line is in your school context.</p>
+        <ul>
+          <li>Think of a task you recently set or observed. If a student used AI to complete it, what thinking would they have skipped? Does that matter?</li>
+          <li>Where in your school is AI genuinely saving time on low-value work — and where might it be quietly eroding something important?</li>
+          <li>Would your staff and students answer the "brain vs. technology" question differently? What does that gap tell you?</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 1.5</p>
+        <h3>"A Good Use of Your Brain, or a Good Use of the Technology?"</h3>
+        <p>Discussion prompts for staff meetings, student discussions, or pastoral care sessions exploring the distinction between AI as a learning scaffold and AI as a cognitive shortcut.</p>
+
+        <h4>For Staff Meetings</h4>
+        <ul>
+          <li>Think of a task you recently set. If a student used AI to complete it, what thinking would they have skipped? Does that matter for this task?</li>
+          <li>Where in your subject is the "productive struggle"? How do you protect that when AI is available?</li>
+          <li>A colleague uses AI to write all their report comments. Is that a good use of the technology, or has something important been lost?</li>
+        </ul>
+
+        <h4>For Student Discussions</h4>
+        <ul>
+          <li>You ask AI to summarise a chapter you haven't read. You ask AI to summarise a chapter you have read. Are these the same thing?</li>
+          <li>You use AI to generate three essay plans, then pick the best one and write the essay yourself. Is this learning or shortcutting?</li>
+          <li>If you always use GPS, you never learn your way around. What's the equivalent in your subject?</li>
+        </ul>
+
+        <div class="callout callout--highlight">
+          <p><strong>The Core Question:</strong> For any use of AI, ask: "Is this a good use of your brain, or a good use of the technology?"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Station B Detail -->
+  <section class="section" id="station-b">
+    <div class="container content-narrow">
+      <span class="badge" style="background: color-mix(in srgb, var(--color-ew) 12%, white); color: var(--color-ew);">Station B &middot; Ethics &amp; Wellbeing</span>
+      <h2>Deepfake Incident Response Protocol</h2>
+
+      <div class="workshop-preamble">
+        <p>This short workshop is designed to give you time to explore one of the tools from the VINE 2026 Guidelines, and provide general feedback on the document. Use the tool below as a discussion prompt for the first <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your thoughts, questions, and feedback on the <strong>Ethics &amp; Wellbeing</strong> section.</p>
+      </div>
+
+      <div class="workshop-prompt">
+        <h3>Discussion Prompt</h3>
+        <p>Deepfake incidents involving students are no longer hypothetical — schools across Australia have already dealt with them. The VINE Guidelines include a step-by-step response protocol adapted from the eSafety Commissioner's guidance.</p>
+        <p>Discuss with your table:</p>
+        <ul>
+          <li>Does your school currently have a crisis management plan that specifically addresses deepfakes? If not, where would this protocol sit within your existing policies?</li>
+          <li>If a deepfake incident was reported at your school on Monday morning, who would be the first three people involved — and would they know what to do?</li>
+          <li>The protocol says <em>"do not view, screenshot, save, or share the content."</em> In practice, how would your staff handle the instinct to gather evidence? What training would they need?</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 2.1</p>
+        <h3>Deepfake Incident Response Protocol</h3>
+        <p>Use this protocol when a deepfake involving a student or staff member is reported or discovered. Adapted from eSafety Commissioner Respond 3A guidance (2025).</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Step</th>
+                <th>Timeline</th>
+                <th>Key Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Immediate Response</strong></td>
+                <td>Within hours</td>
+                <td>Prioritise wellbeing. Do not view, screenshot, save, or share the content. If sexually explicit and involves a minor, report immediately to local police.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Support</strong></td>
+                <td>Within 24 hours</td>
+                <td>Meet with affected student (and family). Offer counselling. Centre the affected person's agency.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Reporting</strong></td>
+                <td>24–48 hours</td>
+                <td>Report to eSafety Commissioner (esafety.gov.au). Follow school behaviour management protocols.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Communication</strong></td>
+                <td>As appropriate</td>
+                <td>Communicate with broader community if needed, without identifying the affected person. Use as a teaching opportunity.</td>
+              </tr>
+              <tr>
+                <td><strong>5. Follow-Up</strong></td>
+                <td>Ongoing</td>
+                <td>Regular check-ins with affected person. Review and update response protocol. Include deepfakes in consent education.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Station C Detail -->
+  <section class="section section--gray" id="station-c">
+    <div class="container content-narrow">
+      <span class="badge" style="background: color-mix(in srgb, var(--color-ps) 15%, white); color: var(--color-ps);">Station C &middot; Privacy &amp; Security</span>
+      <h2>Shadow AI Audit</h2>
+
+      <div class="workshop-preamble">
+        <p>This short workshop is designed to give you time to explore one of the tools from the VINE 2026 Guidelines, and provide general feedback on the document. Use the tool below as a discussion prompt for the first <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your thoughts, questions, and feedback on the <strong>Privacy &amp; Security</strong> section.</p>
+      </div>
+
+      <div class="workshop-prompt">
+        <h3>Discussion Prompt</h3>
+        <p>"Shadow AI" is the use of unapproved AI tools by staff or students — often well-intentioned, sometimes invisible to leadership. The guidelines take a deliberate stance: <em>staff who disclose unapproved tool use should be thanked, not sanctioned.</em></p>
+        <p>Discuss with your table:</p>
+        <ul>
+          <li>How confident are you that you know what AI tools are actually being used across your school right now — by staff, students, and admin?</li>
+          <li>What's stopping staff from disclosing their use of unapproved tools? Is it policy, culture, or something else?</li>
+          <li>The audit questions below are designed to be non-punitive. Would they work in your school's staff meeting? What would you change?</li>
+        </ul>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card__id">Tool 3.3</p>
+        <h3>Shadow AI Audit — Conversation Starters</h3>
+        <p>Questions for staff meetings, surveys, or one-on-ones to surface shadow AI use without creating a punitive atmosphere:</p>
+        <ul>
+          <li>"What AI technologies have you tried recently — approved or otherwise?"</li>
+          <li>"Is there anything you wish you could do with AI but can't, because of access or policy?"</li>
+          <li>"Has anyone found a platform that works really well for a specific task? Let's talk about whether we can get it approved."</li>
+          <li>"Do we know what AI applications are actually being used across the school — not just what's approved?"</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section">
+    <div class="container content-narrow" style="text-align: center;">
+      <h2>How the Jigsaw Works</h2>
+      <p class="lead" style="margin-bottom: 2rem;">Three stations, three rotations. Every table visits every station.</p>
+      <div class="jigsaw-steps">
+        <div class="jigsaw-step">
+          <div class="jigsaw-step__number">1</div>
+          <p><strong>Read &amp; Discuss</strong><br />Spend 10–15 minutes exploring the tool and discussing the prompt with your table.</p>
+        </div>
+        <div class="jigsaw-step">
+          <div class="jigsaw-step__number">2</div>
+          <p><strong>Share on Padlet</strong><br />Use the QR code on your table to add your group's thoughts, questions, and feedback.</p>
+        </div>
+        <div class="jigsaw-step">
+          <div class="jigsaw-step__number">3</div>
+          <p><strong>Rotate</strong><br />Move to the next station. Build on what previous groups have posted.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Workshop card stack */
+  .workshop-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .workshop-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .workshop-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+  }
+
+  .workshop-card--tl::before { background: var(--color-tl); }
+  .workshop-card--ew::before { background: var(--color-ew); }
+  .workshop-card--ps::before { background: var(--color-ps); }
+
+  .workshop-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .workshop-card__badge {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    background: var(--color-gray-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .workshop-card--tl .workshop-card__badge { background: color-mix(in srgb, var(--color-tl) 12%, white); color: var(--color-tl); }
+  .workshop-card--ew .workshop-card__badge { background: color-mix(in srgb, var(--color-ew) 10%, white); color: var(--color-ew); }
+  .workshop-card--ps .workshop-card__badge { background: color-mix(in srgb, var(--color-ps) 12%, white); color: var(--color-ps); }
+
+  .workshop-card__content {
+    flex: 1;
+  }
+
+  .workshop-card__section {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-gray-500);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .workshop-card__content h2 {
+    font-size: 1.375rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .workshop-card__content p {
+    color: var(--color-gray-700);
+    font-size: 0.9375rem;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .workshop-card__arrow {
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    color: var(--color-gray-300);
+    transition: color 0.2s ease;
+  }
+
+  .workshop-card:hover .workshop-card__arrow {
+    color: var(--color-highlight);
+  }
+
+  /* Workshop preamble */
+  .workshop-preamble {
+    background: var(--color-highlight-light);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .workshop-preamble p {
+    margin: 0;
+    line-height: 1.8;
+  }
+
+  /* Discussion prompt */
+  .workshop-prompt {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 2px solid var(--color-gray-200);
+    border-radius: 12px;
+    background: var(--color-white);
+  }
+
+  .workshop-prompt h3 {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-highlight-dark);
+    margin-bottom: 1rem;
+  }
+
+  .workshop-prompt ul {
+    margin: 0.5rem 0 0 1.5rem;
+    line-height: 1.8;
+  }
+
+  .workshop-prompt li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Tool card overrides for this page */
+  .tool-card h4 {
+    margin-top: 1.5rem;
+  }
+
+  .tool-card ul:not(.checklist) {
+    margin: 0.5rem 0 1rem 1.5rem;
+    line-height: 1.8;
+  }
+
+  .callout {
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+  .callout--highlight {
+    background: var(--color-highlight-light);
+    border-left: 4px solid var(--color-highlight);
+  }
+  .callout p { margin: 0; }
+
+  /* Jigsaw steps */
+  .jigsaw-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .jigsaw-step__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-navy);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .jigsaw-step p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .workshop-card {
+      flex-direction: column;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .workshop-card__arrow { display: none; }
+
+    .workshop-preamble {
+      padding: 1.25rem 1.5rem;
+    }
+
+    .workshop-prompt {
+      padding: 1.5rem;
+    }
+
+    .jigsaw-steps {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>
