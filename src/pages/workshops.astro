@@ -3,10 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 ---
 
-<BaseLayout title="Workshops" description="Launch Day workshop stations — explore the VINE 2026 GenAI Guidelines toolkit through structured discussion and collaborative feedback.">
+<BaseLayout title="Workshops" description="Launch Day workshop stations — compare notes across schools through structured discussion and collaborative feedback.">
   <PageHero
     title="Launch Day Workshops"
-    subtitle="Three rotating stations, 20 minutes each. Explore a tool, discuss with your table, and share your thinking on the Padlet."
+    subtitle="Three rotating stations, 20 minutes each. Share your school's experience, compare approaches, and capture your thinking on the Padlet."
     badge="31 March 2026"
   />
 
@@ -20,8 +20,8 @@ import PageHero from '../components/PageHero.astro';
           <div class="workshop-card__badge">Station A</div>
           <div class="workshop-card__content">
             <span class="workshop-card__section">Teaching &amp; Learning</span>
-            <h2>A Good Use of Your Brain, or the Technology?</h2>
-            <p>Discussion prompts exploring the line between AI as a learning scaffold and AI as a cognitive shortcut.</p>
+            <h2>How Is Your School Approaching AI in the Classroom?</h2>
+            <p>Compare notes on how your schools are navigating AI use in teaching, learning, and assessment.</p>
           </div>
           <div class="workshop-card__arrow">&darr;</div>
         </a>
@@ -31,8 +31,8 @@ import PageHero from '../components/PageHero.astro';
           <div class="workshop-card__badge">Station B</div>
           <div class="workshop-card__content">
             <span class="workshop-card__section">Ethics &amp; Wellbeing</span>
-            <h2>Deepfake Incident Response Protocol</h2>
-            <p>A step-by-step protocol for responding when a deepfake involving a student or staff member is reported.</p>
+            <h2>What Are the Emerging Ethical Challenges?</h2>
+            <p>Share experiences and approaches to the ethical and wellbeing dimensions of AI in your school community.</p>
           </div>
           <div class="workshop-card__arrow">&darr;</div>
         </a>
@@ -42,8 +42,8 @@ import PageHero from '../components/PageHero.astro';
           <div class="workshop-card__badge">Station C</div>
           <div class="workshop-card__content">
             <span class="workshop-card__section">Privacy &amp; Security</span>
-            <h2>Shadow AI Audit</h2>
-            <p>Conversation starters to surface unapproved AI use across your school — without creating a punitive atmosphere.</p>
+            <h2>What Does Your School&rsquo;s AI Privacy Landscape Look Like?</h2>
+            <p>Discuss current policies, data concerns, and practical approaches to managing AI privacy and security.</p>
           </div>
           <div class="workshop-card__arrow">&darr;</div>
         </a>
@@ -56,45 +56,23 @@ import PageHero from '../components/PageHero.astro';
   <section class="section section--gray" id="station-a">
     <div class="container content-narrow">
       <span class="badge" style="background: color-mix(in srgb, var(--color-tl) 15%, white); color: var(--color-tl);">Station A &middot; Teaching &amp; Learning</span>
-      <h2>"A Good Use of Your Brain, or a Good Use of the Technology?"</h2>
+      <h2>How Is Your School Approaching AI in the Classroom?</h2>
 
       <div class="workshop-preamble">
-        <p>This short workshop is designed to give you time to explore one of the tools from the VINE 2026 Guidelines, and provide general feedback on the document. Use the tool below as a discussion prompt for the first <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your thoughts, questions, and feedback on the <strong>Teaching &amp; Learning</strong> section.</p>
+        <p>Use this station to compare notes with colleagues from other schools. Discuss the prompts below for <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your table's key takeaways, questions, and feedback on the <strong>Teaching &amp; Learning</strong> section of the guidelines.</p>
       </div>
 
       <div class="workshop-prompt">
-        <h3>Discussion Prompt</h3>
-        <p>The guidelines argue that the key question for any AI use in schools is: <em>"Is this a good use of your brain, or a good use of the technology?"</em></p>
-        <p>Work through the prompts below with your table. Pick one staff question and one student question to start — then consider where the line is in your school context.</p>
+        <h3>Discussion Prompts</h3>
+        <p>Share your school's experiences and current approaches with your table:</p>
         <ul>
-          <li>Think of a task you recently set or observed. If a student used AI to complete it, what thinking would they have skipped? Does that matter?</li>
-          <li>Where in your school is AI genuinely saving time on low-value work — and where might it be quietly eroding something important?</li>
-          <li>Would your staff and students answer the "brain vs. technology" question differently? What does that gap tell you?</li>
+          <li><strong>Where are you at?</strong> How is AI currently being used in teaching and learning at your school — by staff and by students? What policies or expectations are in place?</li>
+          <li><strong>What's working and what's not?</strong> What approaches have been effective? Where are the friction points, grey areas, or unresolved questions?</li>
         </ul>
       </div>
 
-      <div class="tool-card">
-        <p class="tool-card__id">Tool 1.5</p>
-        <h3>"A Good Use of Your Brain, or a Good Use of the Technology?"</h3>
-        <p>Discussion prompts for staff meetings, student discussions, or pastoral care sessions exploring the distinction between AI as a learning scaffold and AI as a cognitive shortcut.</p>
-
-        <h4>For Staff Meetings</h4>
-        <ul>
-          <li>Think of a task you recently set. If a student used AI to complete it, what thinking would they have skipped? Does that matter for this task?</li>
-          <li>Where in your subject is the "productive struggle"? How do you protect that when AI is available?</li>
-          <li>A colleague uses AI to write all their report comments. Is that a good use of the technology, or has something important been lost?</li>
-        </ul>
-
-        <h4>For Student Discussions</h4>
-        <ul>
-          <li>You ask AI to summarise a chapter you haven't read. You ask AI to summarise a chapter you have read. Are these the same thing?</li>
-          <li>You use AI to generate three essay plans, then pick the best one and write the essay yourself. Is this learning or shortcutting?</li>
-          <li>If you always use GPS, you never learn your way around. What's the equivalent in your subject?</li>
-        </ul>
-
-        <div class="callout callout--highlight">
-          <p><strong>The Core Question:</strong> For any use of AI, ask: "Is this a good use of your brain, or a good use of the technology?"</p>
-        </div>
+      <div class="callout callout--highlight">
+        <p><strong>Padlet prompt:</strong> What is the most useful idea or approach you heard from another school at this station? What question are you still wrestling with?</p>
       </div>
     </div>
   </section>
@@ -103,66 +81,23 @@ import PageHero from '../components/PageHero.astro';
   <section class="section" id="station-b">
     <div class="container content-narrow">
       <span class="badge" style="background: color-mix(in srgb, var(--color-ew) 12%, white); color: var(--color-ew);">Station B &middot; Ethics &amp; Wellbeing</span>
-      <h2>Deepfake Incident Response Protocol</h2>
+      <h2>What Are the Emerging Ethical Challenges?</h2>
 
       <div class="workshop-preamble">
-        <p>This short workshop is designed to give you time to explore one of the tools from the VINE 2026 Guidelines, and provide general feedback on the document. Use the tool below as a discussion prompt for the first <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your thoughts, questions, and feedback on the <strong>Ethics &amp; Wellbeing</strong> section.</p>
+        <p>Use this station to compare notes with colleagues from other schools. Discuss the prompts below for <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your table's key takeaways, questions, and feedback on the <strong>Ethics &amp; Wellbeing</strong> section of the guidelines.</p>
       </div>
 
       <div class="workshop-prompt">
-        <h3>Discussion Prompt</h3>
-        <p>Deepfake incidents involving students are no longer hypothetical — schools across Australia have already dealt with them. The VINE Guidelines include a step-by-step response protocol adapted from the eSafety Commissioner's guidance.</p>
-        <p>Discuss with your table:</p>
+        <h3>Discussion Prompts</h3>
+        <p>Share your school's experiences and current approaches with your table:</p>
         <ul>
-          <li>Does your school currently have a crisis management plan that specifically addresses deepfakes? If not, where would this protocol sit within your existing policies?</li>
-          <li>If a deepfake incident was reported at your school on Monday morning, who would be the first three people involved — and would they know what to do?</li>
-          <li>The protocol says <em>"do not view, screenshot, save, or share the content."</em> In practice, how would your staff handle the instinct to gather evidence? What training would they need?</li>
+          <li><strong>What issues have come up?</strong> Has your school dealt with any AI-related ethical or wellbeing concerns — deepfakes, academic integrity, student dependency, or anything else? How did you respond?</li>
+          <li><strong>How are you preparing?</strong> What policies, processes, or conversations does your school have in place for AI-related ethical and wellbeing issues? What gaps are you aware of?</li>
         </ul>
       </div>
 
-      <div class="tool-card">
-        <p class="tool-card__id">Tool 2.1</p>
-        <h3>Deepfake Incident Response Protocol</h3>
-        <p>Use this protocol when a deepfake involving a student or staff member is reported or discovered. Adapted from eSafety Commissioner Respond 3A guidance (2025).</p>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Step</th>
-                <th>Timeline</th>
-                <th>Key Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>1. Immediate Response</strong></td>
-                <td>Within hours</td>
-                <td>Prioritise wellbeing. Do not view, screenshot, save, or share the content. If sexually explicit and involves a minor, report immediately to local police.</td>
-              </tr>
-              <tr>
-                <td><strong>2. Support</strong></td>
-                <td>Within 24 hours</td>
-                <td>Meet with affected student (and family). Offer counselling. Centre the affected person's agency.</td>
-              </tr>
-              <tr>
-                <td><strong>3. Reporting</strong></td>
-                <td>24–48 hours</td>
-                <td>Report to eSafety Commissioner (esafety.gov.au). Follow school behaviour management protocols.</td>
-              </tr>
-              <tr>
-                <td><strong>4. Communication</strong></td>
-                <td>As appropriate</td>
-                <td>Communicate with broader community if needed, without identifying the affected person. Use as a teaching opportunity.</td>
-              </tr>
-              <tr>
-                <td><strong>5. Follow-Up</strong></td>
-                <td>Ongoing</td>
-                <td>Regular check-ins with affected person. Review and update response protocol. Include deepfakes in consent education.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="callout callout--highlight">
+        <p><strong>Padlet prompt:</strong> What is the most useful idea or approach you heard from another school at this station? What question are you still wrestling with?</p>
       </div>
     </div>
   </section>
@@ -171,33 +106,23 @@ import PageHero from '../components/PageHero.astro';
   <section class="section section--gray" id="station-c">
     <div class="container content-narrow">
       <span class="badge" style="background: color-mix(in srgb, var(--color-ps) 15%, white); color: var(--color-ps);">Station C &middot; Privacy &amp; Security</span>
-      <h2>Shadow AI Audit</h2>
+      <h2>What Does Your School&rsquo;s AI Privacy Landscape Look Like?</h2>
 
       <div class="workshop-preamble">
-        <p>This short workshop is designed to give you time to explore one of the tools from the VINE 2026 Guidelines, and provide general feedback on the document. Use the tool below as a discussion prompt for the first <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your thoughts, questions, and feedback on the <strong>Privacy &amp; Security</strong> section.</p>
+        <p>Use this station to compare notes with colleagues from other schools. Discuss the prompts below for <strong>10–15 minutes</strong>, then open the Padlet (QR code on your table) and add your table's key takeaways, questions, and feedback on the <strong>Privacy &amp; Security</strong> section of the guidelines.</p>
       </div>
 
       <div class="workshop-prompt">
-        <h3>Discussion Prompt</h3>
-        <p>"Shadow AI" is the use of unapproved AI tools by staff or students — often well-intentioned, sometimes invisible to leadership. The guidelines take a deliberate stance: <em>staff who disclose unapproved tool use should be thanked, not sanctioned.</em></p>
-        <p>Discuss with your table:</p>
+        <h3>Discussion Prompts</h3>
+        <p>Share your school's experiences and current approaches with your table:</p>
         <ul>
-          <li>How confident are you that you know what AI tools are actually being used across your school right now — by staff, students, and admin?</li>
-          <li>What's stopping staff from disclosing their use of unapproved tools? Is it policy, culture, or something else?</li>
-          <li>The audit questions below are designed to be non-punitive. Would they work in your school's staff meeting? What would you change?</li>
+          <li><strong>What's your current approach?</strong> How is your school managing AI-related privacy and data concerns? Do you have an approved tools list, a vetting process, or guidelines around student data?</li>
+          <li><strong>Where are the challenges?</strong> What's difficult about managing AI privacy and security in practice — shadow AI, vendor claims, staff awareness, or something else?</li>
         </ul>
       </div>
 
-      <div class="tool-card">
-        <p class="tool-card__id">Tool 3.3</p>
-        <h3>Shadow AI Audit — Conversation Starters</h3>
-        <p>Questions for staff meetings, surveys, or one-on-ones to surface shadow AI use without creating a punitive atmosphere:</p>
-        <ul>
-          <li>"What AI technologies have you tried recently — approved or otherwise?"</li>
-          <li>"Is there anything you wish you could do with AI but can't, because of access or policy?"</li>
-          <li>"Has anyone found a platform that works really well for a specific task? Let's talk about whether we can get it approved."</li>
-          <li>"Do we know what AI applications are actually being used across the school — not just what's approved?"</li>
-        </ul>
+      <div class="callout callout--highlight">
+        <p><strong>Padlet prompt:</strong> What is the most useful idea or approach you heard from another school at this station? What question are you still wrestling with?</p>
       </div>
     </div>
   </section>
@@ -210,11 +135,11 @@ import PageHero from '../components/PageHero.astro';
       <div class="jigsaw-steps">
         <div class="jigsaw-step">
           <div class="jigsaw-step__number">1</div>
-          <p><strong>Read &amp; Discuss</strong><br />Spend 10–15 minutes exploring the tool and discussing the prompt with your table.</p>
+          <p><strong>Discuss</strong><br />Spend 10–15 minutes sharing your school's experiences and comparing approaches with your table.</p>
         </div>
         <div class="jigsaw-step">
           <div class="jigsaw-step__number">2</div>
-          <p><strong>Share on Padlet</strong><br />Use the QR code on your table to add your group's thoughts, questions, and feedback.</p>
+          <p><strong>Share on Padlet</strong><br />Use the QR code on your table to add your table's key takeaways and questions.</p>
         </div>
         <div class="jigsaw-step">
           <div class="jigsaw-step__number">3</div>
@@ -364,16 +289,6 @@ import PageHero from '../components/PageHero.astro';
 
   .workshop-prompt li {
     margin-bottom: 0.5rem;
-  }
-
-  /* Tool card overrides for this page */
-  .tool-card h4 {
-    margin-top: 1.5rem;
-  }
-
-  .tool-card ul:not(.checklist) {
-    margin: 0.5rem 0 1rem 1.5rem;
-    line-height: 1.8;
   }
 
   .callout {
